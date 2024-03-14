@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: 'Martel' sans-serif;
+    color: rgba(14, 15, 6);
+    color2: rgba(251, 247, 247)
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: black;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label{
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+input{
+    margin: 54px 0 10px;
+    padding: 7px;
+    font-size: 30px;
+}
+.result{
+    margin: 10px 0 54px;
+    font-size: 30px;
+    color: rgb(8, 8, 8);
+    letter-spacing: 1px;
+    font-weight: bold;
+    height: 1cm;
+}
+button{
+    width: 350px;
+    margin: 0 30px;
+    padding: 10px 30px;
+    background: none;
+    border: 5px solid var(color);
+    border-radius: 7px;
+    color: var(color2);
+    font-size: 25px;
+    font-weight: 600;
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px var(color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover{
+    color: var(color);
+    box-shadow: 3px 3px 10px var(color);
+}
+@media screen and (max-width: 500px){
+    label{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1000px){
+    button{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
